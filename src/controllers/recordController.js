@@ -85,7 +85,7 @@ const getSummary = async (req, res) => {
       netBalance: (total_income || 0) - (total_expense || 0),
     });
   } catch (error) {
-    console.error(error);
+    console.error("Summary error: ",error);
 
     return res.status(500).json({
       message: "Internal server error",

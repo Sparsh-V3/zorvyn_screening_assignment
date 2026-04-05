@@ -1,5 +1,6 @@
 const express = require("express");
 const recordRoutes = require("./routes/recordRoutes")
+require("dotenv").config()
 
 const app = express();
 
